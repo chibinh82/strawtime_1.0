@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/STT"
+        android:layout_width="39dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizePresetSizes="36sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:text="30"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/datePredict"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizePresetSizes="30sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/no_data"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textNextPeriod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/STT" />
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="121dp"
+        android:layout_height="335dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/period"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/STT"
+        app:layout_constraintEnd_toStartOf="@+id/STT"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/dates"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/STT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/STT" />
+
+    <ImageView
+        android:id="@+id/addBut"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendarView"
+        app:srcCompat="@drawable/pngguru_com" />
+
+    <ImageView
+        android:id="@+id/plusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="@+id/addBut"
+        app:layout_constraintTop_toTopOf="@+id/addBut"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/anaBut"
+        android:layout_width="58dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/notepad" />
+
+    <ImageView
+        android:id="@+id/strawBasketBut"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/anaBut"
+        app:srcCompat="@drawable/str_basket" />
+
+    <ImageView
+        android:id="@+id/calBut"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anaBut"
+        app:srcCompat="@drawable/iconfinder_calendar_285670" />
+
+    <ImageView
+        android:id="@+id/smile"
+        android:layout_width="186dp"
+        android:layout_height="156dp"
+        android:layout_marginBottom="168dp"
+        app:layout_constraintBottom_toTopOf="@+id/anaBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/smile_face" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNextPeriod"
+        android:layout_width="65dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/next_period"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/datePredict"
+        app:layout_constraintTop_toBottomOf="@+id/textPeriod" />
+
+    <ImageView
+        android:id="@+id/devImage"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calBut"
+        app:srcCompat="@drawable/developer" />
+
+    <TextView
+        android:id="@+id/devText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/developer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendarView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">StrawTime</string>
+    <string name="roll">Roll</string>
+    <string name="pick_date">Thêm dâu</string>
+    <string name="picked_day">Please select a date</string>
+    <string name="picked_day_is">Date picked is:</string>
+    <string name="view_history">Giỏ dâu</string>
+    <string name="current_date">CurrentDate</string>
+    <string name="to_day_is">To day is:</string>
+    <string name="save">Save</string>
+    <string name="calendar">Lịch</string>
+    <string name="analyse">Home</string>
+    <string name="rs1_1">1</string>
+    <string name="roll_2">Roll#2</string>
+    <string name="roll_1">Roll#1</string>
+    <string name="total">Total</string>
+    <string name="dice1">dice1</string>
+    <string name="dice2">dice2</string>
+    <string name="rs_2">1</string>
+    <string name="rs_total">1</string>
+    <string name="_12">12</string>
+    <string name="confirm_delete">Em có muốn xóa dữ liệu ngày này không ?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="period">Mùa vụ: </string>
+    <string name="next_period">Kỳ dâu kế:</string>
+    <string name="dates"> ngày</string>
+    <string name="default_notification_channel_id">alarm_channel_id_01</string>
+    <string name="channel_name">ten channel</string>
+    <string name="channel_description">Noi dung</string>
+    <string name="no_data">no data</string>
+    <string name="developer">Developer: Bình đẹp trai\nApp version: 1.0</string>
+</resources>
